@@ -1,0 +1,74 @@
+body,
+ul,
+li,
+p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.menu {
+    display: flex;
+
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    background: blue;
+    border-radius: 10px;
+}
+
+h1, h2{
+    text-align-last: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    
+}
+
+/* CSS FLEXBOX 1*/
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+    
+}
+
+.oito {
+
+    color: blue;
+
+}
