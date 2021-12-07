@@ -1,5 +1,5 @@
 # grid_flexbox
-Site de Grid de imagens efetuado para conhecimento tema Raposas, bons estudos!
+Site de Grid de imagens efetuado para conhecimento, tema Raposas, bons estudos!
 
 ## tarefa
 
