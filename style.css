@@ -1,15 +1,16 @@
-body,
-ul,
-li,
-p{
-    margin: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     list-style: none;
     font-size: 1.2rem;
     font-family: Arial;
-
-
 }
+
+/*CABEÇALHO*/
+
+.header{width: 100%; float: left; padding: 3% 4%;}
+.logo {width: 100px; height: 100px; float: left; background: url(./img/fox.png) center center/100px no-repeat; font-size: 0px;}
 
 a {
     text-decoration: none;
@@ -38,37 +39,118 @@ a {
 .menu li a{
     display: block;
     padding: 10px;
-    background: blue;
-    border-radius: 10px;
+    
 }
 
 h1, h2{
     text-align-last: center;
+
 }
 
 img {
     max-width: 100%;
     display: block;
-    
+
 }
 
 /* CSS FLEXBOX 1*/
 
 .flex{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: (6,1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 5px;
+    padding: 5px;
 }
 
 .flex > div{
     flex: 1 1 200px;
     margin: 10px;
-    
+
 }
 
 .oito {
 
     color: blue;
+    max-width: 0 auto;
+
 
 }
+
+.Veja {
+    color: tomato;
+
+}
+
+.mais{
+    color:tomato;
+
+}
+
+.item-galeria{
+    position: relative;
+}
+
+.item-galeria .img-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-galeria .title-galeria{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 0px;
+    font-size: 16pt;
+    font-family: 'Arial';
+}
+
+.h-1{
+    grid-row: span 1;
+}
+
+.h-2{
+    grid-row: span 2;
+}
+
+.w-1{
+    grid-column: span 1;
+}
+
+.w-2{
+    grid-column: span 2;
+}
+
+.footer{
+    background: #1d1e20;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    -ms-text-align-last: center;
+    
+}
+
+.footer h3 a{
+    text-align-last: center;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+@media(max-width:768px){
+    .flex{
+    grid-template-columns: (1,2fr);
+    grid-auto-rows: 27vh;
+    }
+    .footer h3{
+        text-align-last: center;
+        text-orientation: center;
+        float: center;
+    }
+} 

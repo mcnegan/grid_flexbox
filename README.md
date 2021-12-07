@@ -1,5 +1,5 @@
 # grid_flexbox
-O objetivo dessa aprendizagem Front-end, é como criar e estilizar a Grid e Flexbox apenas.
+Site de Grid de imagens efetuado para conhecimento tema Raposas, bons estudos!
 
 ## tarefa
 
